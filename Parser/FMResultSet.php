@@ -1,13 +1,13 @@
 <?php
 
-namespace airmoi\FileMaker\Parser;
+namespace tranduchieu\FileMaker\Parser;
 
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
-use airmoi\FileMaker\Object\Layout;
-use airmoi\FileMaker\Object\Field;
-use airmoi\FileMaker\Object\RelatedSet;
-use airmoi\FileMaker\Object\Record;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
+use tranduchieu\FileMaker\Object\Layout;
+use tranduchieu\FileMaker\Object\Field;
+use tranduchieu\FileMaker\Object\RelatedSet;
+use tranduchieu\FileMaker\Object\Record;
 
 class FMResultSet {
 
@@ -57,7 +57,7 @@ class FMResultSet {
         return true;
     }
 
-    public function setResult($result, $recordClass = 'airmoi\FileMaker\Object\Record') {
+    public function setResult($result, $recordClass = 'tranduchieu\FileMaker\Object\Record') {
         if (!$this->_isParsed) {
             throw new FileMakerException($this->_fm, 'Attempt to get a result object before parsing data.');
         }

@@ -1,5 +1,5 @@
 <?php
-namespace airmoi\FileMaker\Command;
+namespace tranduchieu\FileMaker\Command;
 /**
  * FileMaker API for PHP
  *

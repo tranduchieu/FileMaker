@@ -1,5 +1,5 @@
 <?php
-namespace airmoi\FileMaker;
+namespace tranduchieu\FileMaker;
 /**
  * PEAR, the PHP Extension and Application Repository
  *

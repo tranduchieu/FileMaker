@@ -1,6 +1,6 @@
 <?php
-namespace airmoi\FileMaker\Command;
-use airmoi\FileMaker\FileMaker;
+namespace tranduchieu\FileMaker\Command;
+use tranduchieu\FileMaker\FileMaker;
 /**
  * FileMaker API for PHP
  *

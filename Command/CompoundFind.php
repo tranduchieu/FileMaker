@@ -1,6 +1,6 @@
 <?php
-namespace airmoi\FileMaker\Command;
-use airmoi\FileMaker\FileMaker;
+namespace tranduchieu\FileMaker\Command;
+use tranduchieu\FileMaker\FileMaker;
 /**
  * FileMaker API for PHP
  *
@@ -94,8 +94,8 @@ class CompoundFind extends Command
     
     /**
      * 
-     * @return \airmoi\FileMaker\Object\Result
-     * @throws \airmoi\FileMaker\FileMakerException
+     * @return \tranduchieu\FileMaker\Object\Result
+     * @throws \tranduchieu\FileMaker\FileMakerException
      */
     public function execute() {
         $query = null;

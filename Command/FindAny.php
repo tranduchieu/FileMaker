@@ -1,5 +1,5 @@
 <?php
-namespace airmoi\FileMaker\Command;
+namespace tranduchieu\FileMaker\Command;
 /**
  * FileMaker API for PHP
  *
@@ -28,7 +28,7 @@ class FindAny extends Find
      * FindAny command constructor.
      *
      * @ignore
-     * @param \airmoi\FileMaker\FileMaker $fm FileMaker object the command was created by.
+     * @param \tranduchieu\FileMaker\FileMaker $fm FileMaker object the command was created by.
      * @param string $layout Layout name to find a random record from.
      */
     function __construct($fm, $layout)

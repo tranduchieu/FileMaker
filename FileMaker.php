@@ -1,8 +1,8 @@
 <?php
 
-namespace airmoi\FileMaker;
-use airmoi\FileMaker\Parser\FMResultSet;
-use airmoi\FileMaker\Object\Layout;
+namespace tranduchieu\FileMaker;
+use tranduchieu\FileMaker\Parser\FMResultSet;
+use tranduchieu\FileMaker\Object\Layout;
 /**
  * FileMaker API for PHP
  *
@@ -33,7 +33,7 @@ class FileMaker {
         'database' => '',
         'username' => '',
         'password' => '',
-        'recordClass' => 'airmoi\FileMaker\Object\Record',
+        'recordClass' => 'tranduchieu\FileMaker\Object\Record',
         'prevalidate' => false,
         'curlOptions' => [CURLOPT_SSL_VERIFYPEER => false],
     ];

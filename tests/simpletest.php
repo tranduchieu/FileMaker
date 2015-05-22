@@ -3,9 +3,9 @@
 //header('Content-Type: text/plain');
 //error_reporting(E_ALL);
 
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
-use airmoi\FileMaker\FileMakerValidationException;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
+use tranduchieu\FileMaker\FileMakerValidationException;
 
 require('../autoloader.php');
 require('../FileMaker.php');
@@ -169,7 +169,7 @@ try {
     
     echo 'Try to get First Record... ';
     $record = $result->getFirstRecord();
-    echo ($record instanceof \airmoi\FileMaker\Object\Record ? '<span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>') . PHP_EOL . PHP_EOL;
+    echo ($record instanceof \tranduchieu\FileMaker\Object\Record ? '<span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>') . PHP_EOL . PHP_EOL;
     
     echo 'Check if expected record (ID = 2)... ';
     echo 'returned '.$record->getField('id').'... ' . ($record->getField('id') == 2 ? '<span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>') . PHP_EOL . PHP_EOL;
@@ -225,7 +225,7 @@ try {
     
     echo 'Try to get First Record... ';
     $record = $result->getFirstRecord();
-    echo ($record instanceof \airmoi\FileMaker\Object\Record ? '<span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>') . PHP_EOL . PHP_EOL;
+    echo ($record instanceof \tranduchieu\FileMaker\Object\Record ? '<span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>') . PHP_EOL . PHP_EOL;
     
     echo 'Check if expected record (ID = 2)... ';
     echo 'returned '.$record->getField('id').'... ' . ($record->getField('id') == 2 ? '<span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>') . PHP_EOL . PHP_EOL;
@@ -252,7 +252,7 @@ try {
     
    echo 'Get a related Record... ';
    $relatedRecord = $record->getRelatedSet($relatedSetName)[0];
-   echo ($relatedRecord instanceof \airmoi\FileMaker\Object\Record ? $relatedRecord->getField($relatedSetName.'::id').'... <span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>'). PHP_EOL . PHP_EOL;
+   echo ($relatedRecord instanceof \tranduchieu\FileMaker\Object\Record ? $relatedRecord->getField($relatedSetName.'::id').'... <span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>'). PHP_EOL . PHP_EOL;
 
    echo 'Check child parent... ';
    echo ($relatedRecord->getParent() == $record ? '<span style="color:green">SUCCESS</span>' : '<span style="color:red">FAIL</span>'). PHP_EOL . PHP_EOL;
@@ -318,7 +318,7 @@ try {
    $updateCommand = $fm->newEditCommand($layout->getName(), $record->getRecordId(), ['text_field'=> str_repeat('a', 51)]);
    try {
         $updateCommand->validate();
-   } catch (\airmoi\FileMaker\FileMakerValidationException $e ) {
+   } catch (\tranduchieu\FileMaker\FileMakerValidationException $e ) {
        if ( $e->getErrors('text_field')[0][1] == FileMaker::RULE_MAXCHARACTERS)
         echo '... <span style="color:green">SUCCESS</span>' . PHP_EOL . PHP_EOL;
        else

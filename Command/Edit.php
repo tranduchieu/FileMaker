@@ -1,8 +1,8 @@
 <?php
-namespace airmoi\FileMaker\Command;
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
-use airmoi\FileMaker\FileMakerValidationException;
+namespace tranduchieu\FileMaker\Command;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
+use tranduchieu\FileMaker\FileMakerValidationException;
 /**
  * FileMaker API for PHP
  *
@@ -62,7 +62,7 @@ class Edit extends Command
     
     /**
      * 
-     * @return \airmoi\FileMaker\Object\Result
+     * @return \tranduchieu\FileMaker\Object\Result
      * @throws FileMakerException|FileMakerValidationException
      */
     public function execute() {

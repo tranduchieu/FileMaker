@@ -1,9 +1,9 @@
 <?php
 
-namespace airmoi\FileMaker\Parser;
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
-use airmoi\FileMaker\Object\Layout;
+namespace tranduchieu\FileMaker\Parser;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
+use tranduchieu\FileMaker\Object\Layout;
 
 
 class FMPXMLLAYOUT {

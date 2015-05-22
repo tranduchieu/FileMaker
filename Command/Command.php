@@ -1,8 +1,8 @@
 <?php
-namespace airmoi\FileMaker\Command;
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\Parser\FMResultSet;
-use airmoi\FileMaker\Object\Result;
+namespace tranduchieu\FileMaker\Command;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\Parser\FMResultSet;
+use tranduchieu\FileMaker\Object\Result;
 /**
  * FileMaker API for PHP
  *
@@ -38,7 +38,7 @@ class Command
     
     /**
      *
-     * @var \airmoi\FileMaker\Object\Layout
+     * @var \tranduchieu\FileMaker\Object\Layout
      */
     protected $_layout;
     protected $_resultLayout;
@@ -150,7 +150,7 @@ class Command
             return true;
         }
         $layout = $this->fm->getLayout($this->_layout);
-        $validationErrors = new \airmoi\FileMaker\FileMakerValidationException($this->fm);
+        $validationErrors = new \tranduchieu\FileMaker\FileMakerValidationException($this->fm);
         if ($fieldName === null) {
             foreach ($layout->getFields() as $fieldName => $field) {
                 if (!isset($this->_fields[$fieldName]) || !count($this->_fields[$fieldName])) {
@@ -163,7 +163,7 @@ class Command
                 foreach ($values as $value) {
                     try {
                         $field->validate($value);
-                    }catch (\airmoi\FileMaker\FileMakerValidationException $e){
+                    }catch (\tranduchieu\FileMaker\FileMakerValidationException $e){
                         foreach ( $e->getErrors() as $error ) {
                             $validationErrors->addError($error[0], $error[1], $error[2]);
                         }
@@ -182,7 +182,7 @@ class Command
             foreach ($values as $value) {
                 try {
                         $field->validate($value);
-                    }catch (\airmoi\FileMaker\FileMakerValidationException $e){
+                    }catch (\tranduchieu\FileMaker\FileMakerValidationException $e){
                         foreach ( $e->getErrors() as $error ) {
                             $validationErrors->addError($error[0], $error[1], $error[2]);
                         }
@@ -222,7 +222,7 @@ class Command
      * 
      * @param string $xml
      * @return Result
-     * @throws \airmoi\FileMaker\FileMakerException
+     * @throws \tranduchieu\FileMaker\FileMakerException
      */
     protected function _getResult($xml) {
         $parser = new FMResultSet($this->fm);

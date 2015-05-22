@@ -1,5 +1,5 @@
 <?php
-namespace airmoi\FileMaker\Command;
+namespace tranduchieu\FileMaker\Command;
 /**
  * FileMaker API for PHP
  *
@@ -41,7 +41,7 @@ class FindAll extends Find
     /**
      * 
      * @return Result
-     * @throws \airmoi\FileMaker\FileMakerException
+     * @throws \tranduchieu\FileMaker\FileMakerException
      */
     public function execute() {
         $params = $this->_getCommandParams();

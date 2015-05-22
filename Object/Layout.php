@@ -1,8 +1,8 @@
 <?php
-namespace airmoi\FileMaker\Object;
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
-use airmoi\FileMaker\Parser\FMPXMLLAYOUT;
+namespace tranduchieu\FileMaker\Object;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
+use tranduchieu\FileMaker\Parser\FMPXMLLAYOUT;
 /**
  * FileMaker API for PHP
  *

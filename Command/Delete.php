@@ -1,7 +1,7 @@
 <?php
-namespace airmoi\FileMaker\Command;
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
+namespace tranduchieu\FileMaker\Command;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
 /**
  * FileMaker API for PHP
  *
@@ -42,7 +42,7 @@ class Delete extends Command
     
     /**
      * 
-     * @return \airmoi\FileMaker\Object\Result
+     * @return \tranduchieu\FileMaker\Object\Result
      * @throws FileMakerException
      */
     function execute() {

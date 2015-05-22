@@ -1,27 +1,27 @@
 {
-    "name": "airmoi/filemaker",
+    "name": "tranduchieu/filemaker",
     "description": "Rewriten FileMaker PHP-API",
     "keywords": ["filemaker","PHP-API"],
     "license": "FileMaker Sofware Licence",
     "authors": [
         {
-            "name": "Romain Dunand",
-            "email": "airmoi@gmail.com"
+            "name": "Hieu Tran",
+            "email": "tranduchieu@me.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "airmoi\\FileMaker\\": "/",
-            "airmoi\\FileMaker\\Object\\": "Object/",
-            "airmoi\\FileMaker\\Parser\\": "Parser/",
-            "airmoi\\FileMaker\\Error\\": "Error/",
-            "airmoi\\FileMaker\\Command\\": "Command/"
+            "tranduchieu\\FileMaker\\": "/",
+            "tranduchieu\\FileMaker\\Object\\": "Object/",
+            "tranduchieu\\FileMaker\\Parser\\": "Parser/",
+            "tranduchieu\\FileMaker\\Error\\": "Error/",
+            "tranduchieu\\FileMaker\\Command\\": "Command/"
         }
     },
 	"repositories":[
 		{
 			"type": "git",
-			"url": "https://github.com/airmoi/FileMaker.git"
+			"url": "https://github.com/tranduchieu/FileMaker.git"
 		}
 	]
 }

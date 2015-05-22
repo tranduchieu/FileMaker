@@ -1,9 +1,9 @@
 <?php
 
-namespace airmoi\FileMaker\Object;
+namespace tranduchieu\FileMaker\Object;
 
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
 
 /**
  * FileMaker API for PHP
@@ -346,7 +346,7 @@ class Record {
      *        pre-validates the entire record.
      *
      * @return boolean TRUE, if pre-validation passes for $value.
-     * @throws \airmoi\FileMaker\FileMakerValidationException
+     * @throws \tranduchieu\FileMaker\FileMakerValidationException
      */
     public function validate($fieldName = null) {
         $command = $this->fm->newAddCommand($this->layout->getName(), $this->fields);

@@ -1,7 +1,7 @@
 <?php
 
-namespace airmoi\FileMaker\Command;
-use airmoi\FileMaker\FileMakerException;
+namespace tranduchieu\FileMaker\Command;
+use tranduchieu\FileMaker\FileMakerException;
 
 /**
  * FileMaker API for PHP
@@ -51,7 +51,7 @@ class Add extends Command {
 
     /**
      * 
-     * @return \airmoi\FileMaker\Object\Result
+     * @return \tranduchieu\FileMaker\Object\Result
      * @throws FileMakerException
      */
     public function execute() {

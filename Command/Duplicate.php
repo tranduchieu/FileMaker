@@ -1,7 +1,7 @@
 <?php
-namespace airmoi\FileMaker\Command;
-use airmoi\FileMaker\FileMaker;
-use airmoi\FileMaker\FileMakerException;
+namespace tranduchieu\FileMaker\Command;
+use tranduchieu\FileMaker\FileMaker;
+use tranduchieu\FileMaker\FileMakerException;
 /**
  * FileMaker API for PHP
  *
